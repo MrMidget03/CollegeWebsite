@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tips For Football Manager - Community</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="js/mobile-nav.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="Menu">
+
+        <!-- Hamburger Icon for Mobile -->
+
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+
+            &#9776; <!-- Unicode character for hamburger icon -->
+
+        </div>
+
+        <nav id="nav">
+
+            <a href="index.html">Home Page</a>
+
+            <a href="SetUpSave.html">How To Create Your First Save</a>
+
+            <a href="Staff.html">Tips On Staff</a>
+
+            <a href="Scouting.html">Tips On Scouting</a>
+
+            <a href="Transfers.html">Tips On Transfers</a>
+
+            <a href="Community.html">Community</a>
+
+        </nav>
+
+        <div class="Sign">
+
+            <!-- Sign Up Button -->
+            <button id="signUpBtn" class="btn">Sign Up</button>
+
+            <!-- Sign Up Form (Initially hidden) -->
+
+            <div id="signUpPopup" class="popup">
+
+                <div class="popup-content">
+
+                    <span id="closeSignUp" class="close">&times;</span>
+
+                    <h2>Sign Up</h2>
+
+                    <form>
+
+                        <label for="newUsername">Username:</label><br>
+
+                        <input type="text" id="newUsername" name="newUsername"><br><br>
+
+                        <label for="newPassword">Password:</label><br>
+
+                        <input type="password" id="newPassword" name="newPassword"><br><br>
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <!-- Sign In Button -->
+
+            <button id="signInBtn" class="btn">Sign In</button>
+
+            <!-- Sign In Popup -->
+
+            <div id="signInPopup" class="popup">
+
+                <div class="popup-content">
+
+                    <span id="closeSignIn" class="close">&times;</span>
+
+                    <h2>Sign In</h2>
+
+                    <form>
+
+                        <label for="username">Username:</label><br>
+
+                        <input type="text" id="username" name="username"><br><br>
+
+                        <label for="password">Password:</label><br>
+
+                        <input type="password" id="password" name="password"><br><br>
+
+                        <button type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div class="container">
+        
+        <section class="post-form">
+
+            <h2>Create a New Post</h2>
+
+            <form id="post-form">
+                <textarea id="post-content" rows="4" placeholder="What's on your mind?" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+
+        </section>
+
+        <section class="posts">
+
+            <h2>Recent Posts</h2>
+
+            <div class="post" id="post-1">
+
+                <div class="post-header">
+                    <strong>Rich572</strong> <span class="timestamp">March 10, 2025</span>
+                </div>
+
+                <div class="post-content">
+                    <p>The tips on signing players with a limited budget really helped me to get my local team to the prem!</p>
+                </div>
+
+            </div>
+
+            <div class="post" id="post-2">
+
+                <div class="post-header">
+                    <strong>AdminUser6789</strong> <span class="timestamp">March 1, 2025</span>
+                </div>
+
+                <div class="post-content">
+                    <p>Welcome to the community! We're happy to have you here</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+
+        <div class="left-images">
+
+            <img src="Images/Universal/FootballManagerLogo.png" alt="Football Managers Logo">
+
+            <img src="Images/Universal/SegaLogo.png" alt="Sega Logo">
+
+            <img src="Images/Universal/SportsInteractiveLogo.png" alt="Sports Interactive Logo">
+
+            <img src="Images/Universal/Pegi3Logo.png" alt="Pegi3 Logo">
+
+        </div>
+    
+        <div class="right-content">
+
+            <h3>Follow Football Manager on social media!!!</h3>
+
+            <div class="social-icons">
+
+                <a href="https://www.instagram.com/footballmanager/">
+                    <img src="Images/FooterLinks/InstagramLogo.png" alt="Instagram logo linking to Football Managers Instagram account">
+                </a>
+
+                <a href="https://twitter.com/footballmanager">
+                    <img src="Images/FooterLinks/XLogo.png" alt="X logo linking to Football Managers X account">
+                </a>
+
+                <a href="https://facebook.com/footballmanager">
+                    <img src="Images/FooterLinks/FacebookLogo.png" alt="Facebook logo linking to Football Managers Facebook account">
+                </a>
+
+                <a href="https://www.tiktok.com/@footballmanager?lang=en">
+                    <img src="Images/FooterLinks/TiktokLogo.png" alt="TikTok logo linking to Football Managers TikTok account">
+                </a>
+
+                <a href="https://www.youtube.com/subscription_center?add_user=sigamesofficial">
+                    <img src="Images/FooterLinks/YouTubeLogo.png" alt="YouTube logo linking to Football Managers YouTube account">
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
