@@ -1,0 +1,357 @@
+/* Global styles for the html and body */
+html, body {
+    height: 100%; /* Ensures the body takes full height of the viewport */
+}
+
+body {
+    background-color: #0A0F1E; /* Dark background for the body */
+}
+
+/* Text styling */
+h3 {
+    color: white; /* White text for all h3 headers */
+}
+
+h1, h2, p {
+    color: white; /* White text for h1, h2, and p elements */
+    text-align: center; /* Center align text for headings and paragraphs */
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 18px; /* Adjust the size of the paragraph text */
+    line-height: 1.5; /* Adds spacing between lines for readability */
+    margin-left: 10%; /* Adds margin on the left */
+    margin-right: 10%; /* Adds margin on the right */
+}
+
+/* Menu container styling */
+.Menu {
+    display: flex;
+    justify-content: space-between; /* Position navigation on left and sign up on right */
+    align-items: center;
+    padding: 10px 20px; /* Adds padding inside the menu */
+    background-color: #333; /* Dark background for the menu */
+    color: white; /* White text for menu */
+}
+
+/* Navigation Links styling */
+nav {
+    display: flex;
+    gap: 20px; /* Adds space between the navigation links */
+}
+
+nav a {
+    color: white; /* White color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Set font size for the navigation links */
+}
+
+/* Add space after the Community link */
+nav a[href="Community.html"] {
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Hamburger icon styling for mobile */
+.hamburger {
+    display: none; /* Hide by default */
+    font-size: 30px; /* Set the size of the hamburger icon */
+    cursor: pointer; /* Change cursor to pointer when hovered */
+}
+
+/* Sign Up and Sign In button styling */
+.Sign {
+    display: flex;
+    gap: 10px; /* Adds space between the buttons */
+}
+
+.Sign .btn {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white; /* White text for buttons */
+    padding: 10px 20px; /* Add padding inside the buttons */
+    border: none; /* Remove borders from buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    text-decoration: none; /* Remove text underline */
+    font-size: 16px; /* Set font size */
+    text-align: center; /* Align text inside buttons */
+}
+
+.Sign .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Hide pop-ups by default */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Fallback color for background */
+}
+
+/* Styling for the popup content */
+.popup-content {
+    background-color: #0A0F1E; /* Dark background for visibility */
+    color: white; /* White text */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the close button (X) */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Image styling for centering */
+.homeImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* General image styling */
+img {
+    display: block; /* Make the image a block element */
+    margin-left: auto; /* Automatically adjust left margin */
+    margin-right: auto; /* Automatically adjust right margin */
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Align content vertically */
+    padding: 20px; /* Add padding inside footer */
+}
+
+/* Left section of footer containing logos */
+footer .left-images {
+    display: flex;
+    gap: 20px; /* Add space between the logos */
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+}
+
+/* Styling for the footer logos */
+footer .left-images img {
+    width: auto; /* Let images keep their original width */
+    height: 50px; /* Set a consistent height for the logos */
+    max-width: 100%; /* Ensure images do not exceed their container */
+}
+
+/* Specific logo size adjustments */
+footer .left-images img:nth-child(1),
+footer .left-images img:nth-child(2),
+footer .left-images img:nth-child(3) {
+    height: 50px; /* Ensure consistent height for these logos */
+    max-width: 150px; /* Limit maximum width to 150px for consistency */
+}
+
+/* Adjust the Pegi 3 logo */
+footer .left-images img:nth-child(4) {
+    width: 50px; /* Make the Pegi 3 logo square */
+    height: 50px; /* Ensure it’s a square */
+    object-fit: contain; /* Maintain aspect ratio of the logo */
+}
+
+/* Right content in footer containing social media links */
+footer .right-content {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: flex-end; /* Align to the right */
+}
+
+/* Add space between the heading and social icons */
+footer h3 {
+    margin-bottom: 10px;
+}
+
+/* Social icons styling */
+footer .right-content .social-icons {
+    display: flex;
+    gap: 10px; /* Space between social icons */
+}
+
+/* Social icon size */
+footer .right-content img {
+    width: 40px; /* Set social media icons width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Community page styles */
+.post-form {
+    margin-top: 2rem;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+button {
+    background-color: #007bff;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.posts {
+    margin-top: 2rem;
+}
+
+.post {
+    background-color: #222;
+    color: white;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.timestamp {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.post-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 499px) {
+
+    p {
+        line-height: 2; /* Adds more spacing between lines for readability on mobile */
+    }
+
+    /* Adjust Sign Up and Sign In buttons on mobile */
+    .Sign {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    img {
+        max-width: 80%; /* Resize the images to 80% of the container width on mobile */
+    }
+}
+
+/*Medi Query for Tablets and Mobile (Maximum width 999.97)*/
+@media screen and (max-width: 999.97px) {
+         /* Hide navigation links by default */
+         nav {
+            display: none;
+            flex-direction: column; /* Stack links vertically */
+            background-color: #333;
+            width: 100%;
+            position: absolute;
+            top: 50px; /* Position below the header */
+            left: 0;
+            padding: 10px 0;
+        }
+    
+        /* Show the menu when it's toggled */
+        nav.active {
+            display: flex;
+        }
+    
+        /* Display the hamburger icon */
+        .hamburger {
+            display: block;
+        }
+
+            /* Stack footer content on mobile */
+    footer {
+        flex-direction: column;
+        align-items: flex-start; /* Align left on mobile */
+    }
+
+    footer .left-images {
+        flex-direction: row; /* Arrange images in a row */
+        gap: 10px;
+    }
+
+    footer .left-images img {
+        width: 45%; /* Make images smaller to fit in row */
+        height: auto; /* Keep aspect ratio */
+    }
+
+    footer .right-content {
+        align-items: flex-start; /* Align the right content to the left on small screens */
+    }
+
+    footer .right-content .social-icons {
+        flex-direction: row; /* Display social icons in a row */
+    }
+
+    footer img {
+        width: 40px; /* Adjust social icon size for mobile */
+    }
+
+}
+
+/* Media Query for Tablets (between 500px and 999.97px) */
+@media (min-width: 500px) and (max-width: 999.97px) {
+
+    p {
+        line-height: 1.8; /* Adjust line height for better readability on tablets */
+    }
+
+    /* Add gap between the Sign Up and Sign In buttons */
+    .Menu .Sign a {
+        margin-top: 10px;
+    }
+
+    /* Add margin to the right of the Sign Up button */
+    .Sign .btn {
+        margin-right: 10px;
+    }
+}
+
+/* Tablet and up - for screens larger than 500px */
+@media screen and (min-width: 500px) {
+    img {
+        max-width: 90%; /* Resize the image to 90% of the container width on tablets */
+    }
+}
